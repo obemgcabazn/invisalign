@@ -7,12 +7,14 @@ var gulp          = require('gulp'),
     pump          = require('pump'),
     cleanCSS      = require('gulp-clean-css'),
     livereload    = require('gulp-livereload'),
+    pug           = require('gulp-pug'),
     imagemin      = require('gulp-imagemin');
 
 
 gulp.task('watch', function(){
   livereload.listen();
   gulp.watch( 'frontend/sass/*.sass', gulp.series('sass'/*, 'css'*/));
+  gulp.watch( 'frontend/templates/*.pug', gulp.series( 'pug' ) );
   gulp.watch( 'public/*.php').on('change', livereload.changed);
   gulp.watch( 'public/css/*.css').on('change', livereload.changed);
   gulp.watch( 'frontend/js/*.js', gulp.series('js')).on('change', livereload.changed);
@@ -26,6 +28,12 @@ gulp.task('js', function (cb) {
         ],
         cb
     );
+});
+
+gulp.task('pug', function (){
+    return gulp.src( 'frontend/templates/indexfile.pug' )
+        .pipe( pug( {pretty: true} ) )
+        .pipe( gulp.dest( 'public/' ) )
 });
 
 gulp.task('sass', function () {
@@ -58,6 +66,7 @@ gulp.task(
     'default',
     gulp.parallel(
       'sass',
+      'pug',
       'js',
       'watch'
       )

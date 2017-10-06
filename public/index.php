@@ -28,7 +28,7 @@
 	</div>
 </header>
 
-<section id="first-screen">
+<section class="first-screen">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-5"></div>
@@ -80,7 +80,7 @@
 	</div>
 </section>
 
-<section id="minus">
+<section class="minus">
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -94,7 +94,7 @@
 	</div>
 </section>
 
-<section id="doctors">
+<section class="doctors">
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -116,8 +116,7 @@
 					Invisalign. Он имеет огромный опыт в работе с этой системой элайнеров и <br>
 					высоко оценивает ее эффективность и практичность.</p>
 				<p>Стаж в стоматологии более 30 лет. Имеет клинику в г. Париж, специализирующуюся на эстетической ортодонтии.</p>
-				<p><i>Получил статус «Платинового» специалиста в области работы с системой невидимых капп «INVISALIGN» в 2001 году.
-						Имеет диплом об окончании Медицинского Университета города Бордо.</i></p>
+				<p><i>Получил статус «Платинового» специалиста в области работы с системой невидимых капп «INVISALIGN» в 2001 году. Имеет диплом об окончании Медицинского Университета города Бордо.</i></p>
 				<a href="#" class="call-back">Записаться на прием</a>
 			</div>
 		</div>
