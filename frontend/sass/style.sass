@@ -7,8 +7,27 @@ $black: #363636
 $font-title: Prata, 'Times New Roman', serif
 $font-base: 'Open Sans', Helvetica, Arial, sans-serif
 
+.blue
+  color: $blue
+
 h1, h2, h3, h4, h5, h6
   font-family: $font-title
+
+h2
+  font-size: 40px
+  margin-bottom: 40px
+  letter-spacing: 1px
+
+h3
+  font-size: 28px
+  margin-bottom: 28px
+
+h4
+  font-size: 20px
+  margin-bottom: 20px
+
+p
+  line-height: 1.7
 
 p, address
   font-family: $font-base
@@ -38,9 +57,11 @@ header
     font-family: $font-title
     font-size: 26px
 
-section.first-screen
-  padding-top: 70px
+section
+  padding: 70px 0
 
+
+section.first-screen
   background: url('../img/invisalign.png') no-repeat
   background-size: contain
 
@@ -63,9 +84,41 @@ section.first-screen
   .desc
     font-size: 24px
 
+section.advantages
+  background: $blue
+  color: white
+
+  h3
+    font-size: 20px
+    margin-bottom: 20px
+
+  .desc
+    font-size: 14px
 
 
+section.minus
+  padding-bottom: 35px
 
+  h2
+    color: $blue
+
+  .desc
+    font-size: 18px
+    line-height: 1.7
+
+section.doctors
+  padding-top: 35px
+
+  .desc
+    margin-bottom: 40px
+
+  h3
+    color: $blue
+    letter-spacing: 1px
+
+section.price
+  background: $blue
+  color: white
 
 footer
   background: $light-blue
