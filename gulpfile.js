@@ -16,6 +16,7 @@ gulp.task('watch', function(){
   gulp.watch( 'frontend/sass/*.sass', gulp.series('sass'/*, 'css'*/));
   gulp.watch( 'frontend/templates/*.pug', gulp.series( 'pug' ) );
   gulp.watch( 'public/*.php').on('change', livereload.changed);
+  gulp.watch( 'public/*.html').on('change', livereload.changed);
   gulp.watch( 'public/css/*.css').on('change', livereload.changed);
   gulp.watch( 'frontend/js/*.js', gulp.series('js')).on('change', livereload.changed);
 });
