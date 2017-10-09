@@ -187,7 +187,7 @@
 	</div>
 </section>
 
-<section id="before-after">
+<section class="before-after">
 	<h1 class="text-center">Фото до и после</h1>
 	<div class="container">
 		<div class="row">
