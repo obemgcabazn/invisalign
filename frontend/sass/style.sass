@@ -66,6 +66,9 @@ button.btn
 .form-control, .form-group
   display: inline-block
 
+  .modal &
+    display: block
+
 .form-control
   padding: 11px
 
@@ -101,7 +104,7 @@ section
 
 
 section.first-screen
-  background: url('../img/invisalign.png') no-repeat
+  background: url('../img/invisalign.jpg') no-repeat
   background-size: contain
 
   .first-screen-logo
@@ -133,8 +136,11 @@ section.first-screen
   button
     display: block
 
+  .form-result
+    height: 108px
+
 section.advantages
-  background: $blue
+  background: $blue url('../img/pattern.svg')
   color: white
 
   h3
@@ -170,12 +176,13 @@ section.doctors
 
   .first-doctor
     margin-bottom: 70px
+    margin-top: 50px
 
   button
     margin-top: 18px
 
 section.price
-  background: $blue
+  background: $blue url('../img/pattern.svg')
   color: white
 
   p
@@ -185,8 +192,16 @@ section.price
   .form-wrap
     text-align: center
 
+    .form-group
+      margin-right: 25px
+      width: 250px
+
 section.advantages-second
   padding-bottom: 35px
+
+  .desc
+    margin-bottom: 60px
+
   h4
     font-size: 22px
     line-height: 1.7
@@ -213,7 +228,7 @@ section.before-after
     margin-bottom: 20px
 
 section.order
-  background: $blue
+  background: $blue url('../img/pattern.svg')
   color: white
 
   h2
@@ -222,6 +237,13 @@ section.order
   .desc
     font-size: 16px
     margin-top: 16px
+
+  .form-wrap
+    text-align: center
+
+    .form-group
+      margin-right: 25px
+      width: 250px
 
 footer
   background: $light-blue
@@ -240,3 +262,35 @@ footer
 
 button.close
   cursor: pointer
+
+.modal
+  .modal-content
+    padding: 0 50px 50px
+
+    .modal-header
+      border: none
+
+      button.close
+        position: absolute
+        right: 15px
+        top: 15px
+
+    .modal-title
+      font-size: 28px
+      color: $blue
+      margin: 10px 0 30px
+
+    input
+      font-style: italic
+      margin-bottom: 30px
+      max-width: 300px
+      margin: auto
+
+    button.btn
+      text-align: center
+      display: block
+      margin: auto
+      margin-top: 30px
+
+.form-result
+  display: none

@@ -1,0 +1,14 @@
+.modal-dialog.modal-md( role='document' )
+  .modal-content
+    .modal-header
+
+      button.close(type='button' data-dismiss='modal' aria-label='Close')
+        span(aria-hidden='true')
+          img(src="img/close.svg" alt="Close")
+    h5.modal-title.text-center Записаться на прием
+    include form
+
+    .form-result.text-center
+      p Спасибо за Вашу заявку!
+      hr
+      p Мы перезвоним Вам в ближайшее время!

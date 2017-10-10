@@ -1,4 +1,4 @@
-form(
+form.call-back-form(
   action='mail.php'
   method='POST'
   name='first-screen-form')
@@ -8,6 +8,7 @@ form(
       type='text'
       name='name'
       placeholder='Введите имя'
+      required='true'
     )
 
   div.form-group
@@ -15,6 +16,7 @@ form(
       type='phone'
       name='phone'
       placeholder='Введите телефон'
+      required='true'
     )
 
   button.btn.btn-blue Отправить заявку!

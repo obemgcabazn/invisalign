@@ -1,1 +1,1 @@
-jQuery(function(){});
+!function(t){t(function(){var a;t('[data-doctor="cassagne"]').click(function(){a=1}),t('[data-doctor="morozova"]').click(function(){a=2}),t(".call-back-form").submit(function(c){c.preventDefault();var o=t(this).attr("method"),i=t(this).attr("action"),n=t(this).serialize();void 0===a&&""===a||(n+="&doctor="+a),t.ajax({type:o,url:i,data:n,success:function(a){t(".call-back-form, .modal-title").css("display","none"),t(".form-result").css("display","block")}})})})}(jQuery);

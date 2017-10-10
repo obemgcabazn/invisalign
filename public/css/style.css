@@ -1,5 +1,6 @@
 .blue,.btn-blue,a{color:#146aa4}
 button.btn,button.close{cursor:pointer}
+section.order .form-wrap,section.price .form-wrap{text-align:center}
 h1,h2,h3,h4,h5,h6{font-family:Prata,"Times New Roman",serif}
 h2{font-size:40px;margin-bottom:40px;letter-spacing:1px}
 h3{font-size:28px;margin-bottom:28px}
@@ -15,7 +16,7 @@ button.btn{line-height:1}
 .form-inverse .btn-blue{color:#fff;border-color:#fff}
 .form-inverse .btn-blue:hover{background:#fff;color:#146aa4}
 .form-control,.form-group{display:inline-block}
-footer .site,section.first-screen button{display:block}
+.modal .form-control,.modal .form-group,footer .site,section.first-screen button{display:block}
 .form-control{padding:11px}
 .border-blue{border:1px solid #146aa4;border-radius:5px;padding:15px}
 header{background:#146aa4;padding:12px 0;box-shadow:0 3px 13px 0 rgba(0,0,0,.2)}
@@ -24,14 +25,17 @@ header .phone{color:#fff;font-size:26px}
 section{padding:70px 0}
 section.advantages-second,section.minus{padding-bottom:35px}
 section.before-after,section.doctors{padding-top:35px}
-section.first-screen{background:url(../img/invisalign.png) no-repeat;background-size:contain}
+section.first-screen{background:url(../img/invisalign.jpg) no-repeat;background-size:contain}
+section.advantages,section.order,section.price{background:url(../img/pattern.svg) #146aa4}
 section.first-screen .first-screen-logo{margin-bottom:35px}
 section.first-screen h1{text-transform:uppercase;color:#146aa4;font-size:56px;margin-bottom:30px}
 section.first-screen h2{color:#146aa4;font-size:30px;letter-spacing:1px;line-height:1.45;margin-bottom:40px}
 section.first-screen .desc{font-size:24px}
 section.first-screen .form-group{margin-right:12px;margin-bottom:26px}
+section.order .form-wrap .form-group,section.price .form-wrap .form-group{margin-right:25px;width:250px}
 section.first-screen input{min-width:232px}
-section.advantages{background:#146aa4;color:#fff}
+section.first-screen .form-result{height:108px}
+section.advantages{color:#fff}
 section.advantages h3{font-size:20px;margin-bottom:20px}
 section.advantages .desc{font-size:14px}
 section.minus h2{color:#146aa4}
@@ -39,20 +43,27 @@ section.minus .desc{font-size:18px;line-height:1.7}
 section.doctors .desc{margin-bottom:40px}
 section.doctors h3{color:#146aa4;letter-spacing:1px}
 section.doctors .doctor,section.doctors .first-doctor{font-size:18px}
-section.doctors .first-doctor{margin-bottom:70px}
+section.doctors .first-doctor{margin-bottom:70px;margin-top:50px}
 section.doctors button{margin-top:18px}
-section.price{background:#146aa4;color:#fff}
+section.price{color:#fff}
 section.price p{font-size:18px;margin-bottom:28px}
-section.price .form-wrap{text-align:center}
+section.advantages-second .desc{margin-bottom:60px}
 section.advantages-second h4{font-size:22px;line-height:1.7;color:#146aa4}
 section.advantages-second p.list-desc,section.before-after h5{font-size:14px;color:#146aa4}
 section.before-after h1{color:#146aa4;margin-bottom:20px}
 section.before-after h5{font-family:"Open Sans",Helvetica,Arial,sans-serif;font-weight:400}
 section.before-after img{margin-bottom:20px}
-section.order{background:#146aa4;color:#fff}
+section.order{color:#fff}
 section.order h2{line-height:1.7}
 section.order .desc{font-size:16px;margin-top:16px}
 footer{background:#ecf3f7;padding:55px 0;color:#146aa4}
 footer .site{font-size:18px;text-decoration:underline;margin-top:24px}
 footer .phone{font-family:Prata,"Times New Roman",serif;font-size:28px}
+.modal .modal-content{padding:0 50px 50px}
+.modal .modal-content .modal-header{border:none}
+.modal .modal-content .modal-header button.close{position:absolute;right:15px;top:15px}
+.modal .modal-content .modal-title{font-size:28px;color:#146aa4;margin:10px 0 30px}
+.modal .modal-content input{font-style:italic;max-width:300px;margin:auto}
+.modal .modal-content button.btn{text-align:center;display:block;margin:30px auto auto}
+.form-result{display:none}
 /*# sourceMappingURL=style.css.map */

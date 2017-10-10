@@ -7,7 +7,7 @@ header
       .col-xl-4
         address г. Москва, 2-я Звенигородская ул.,<br>д. 13, стр. 41
       .col-xl-3
-        a.phone.text-right( href='tel:+79457072323' rel='nofollow') +7 (495) 707-23-23
+        a.phone.text-right( href='tel:+74957072323' rel='nofollow') +7 (495) 707-23-23
 
 section.first-screen
   .container
@@ -17,12 +17,16 @@ section.first-screen
         .row
           .col-xl-6
             .first-screen-logo
-              img.logo-invisalign( src="img/invisalign_logo.svg" alt="Invisalign" )
+              img.logo-invisalign( src='img/invisalign_logo.svg' alt='Invisalign' )
         h1 Invisalign
         h2 Незаметное лечение,<br>заметный результат
         p.desc Узнайте стоимость годового контракта «под ключ»!
 
         include form
+
+        .form-result
+          p Спасибо за заявку!<br>
+          | Мы перезвоним Вам в ближайшее время!
 
 section.advantages
   h2.text-center Чем капы Invisalign лучше брекетов?
@@ -76,6 +80,7 @@ section.doctors
           button.call-back.btn.btn-blue(
             data-toggle="modal"
             data-target="#sendOrderCassagne"
+            data-doctor="cassagne"
           ) Запись на прием
 
     .doctor
@@ -92,6 +97,7 @@ section.doctors
           button.call-back.btn.btn-blue(
             data-toggle="modal"
             data-target="#sendOrderMorozova"
+            data-doctor="morozova"
           ) Запись на прием
         .col-xl-4
           img(src="img/morozova.jpg" alt="Наталья Морозова")
@@ -109,12 +115,16 @@ section.price
         div.form-wrap.form-inverse.text-center
           include form
 
+        .form-result.text-center
+          p Спасибо за заявку!<br>Мы перезвоним Вам в ближайшее время!
+
 section.advantages-second
   h2.text-center.blue Чем Invasalign лучше других элайнеров?
   .container
     .row
-      p.text-center.desc Наши доктора успели поработать с многими системами элайнеров как зарубежного. так и  российского производства. Когда речь идет об эффективности. комофорте и безопасности лечения, на первый план выходят следующие преимеущества Invisalign:
-  .container
+      .col-xl-1
+      .col-xl-10
+        p.text-center.desc Наши доктора успели поработать с многими системами элайнеров как зарубежного. так и  российского производства. Когда речь идет об эффективности. комофорте и безопасности лечения, на первый план выходят следующие преимеущества Invisalign:
     .row
       - var listAdv = [["Высококачественный пластик", "Каппы из хорошего материала безопасны, удобны в носке и уходе, не деформируются. Кроме того, они совершенно прозрачны!"], ["Предсказуемый результат", "Никаких сюрпризов: предсказуемый результат в указанные сроки!"], ["Отлаженная работа с докторами", "На результат лечения влияют не только материал и доктор, но и то, насколько слаженно работает производитель с Вашим врачом!"], ["Колоссальный опыт работы", "Таким опытом работы с элайнерами, который есть у Invisalign, не может похвастаться ни один производитель элайнеров!"]]
       - for (var x = 0; x < 4; x++)
@@ -150,6 +160,9 @@ section.order
         .form-wrap.form-inverse.text-center
           include form
 
+        .form-result.text-center
+          p Спасибо за заявку!<br>Мы перезвоним Вам в ближайшее время!
+
         p.desc
           small *Полтора года – средний срок ортодонтичекого лечения Invisalign в ООО «Французский медицинский центр». Точный срок лечения возможно назвать только после диагностики!
 
@@ -175,20 +188,7 @@ footer
   aria-labelledby='sendOrderModalLabel'
   aria-hidden='true'
 )
-  .modal-dialog.modal-md( role='document' )
-    .modal-content
-      .modal-header
-        h5.modal-title Запись на прием к доктору Кассань
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true')
-            img(src="img/close.svg" alt="Close")
-
-      include form
-
-      .form-result
-        p Спасибо за Вашу заявку!
-        hr
-        p Мы перезвоним Вам в ближайшее время!
+  include modal
 
 .modal.fade#sendOrderMorozova(
   tabindex='-1'
@@ -196,17 +196,4 @@ footer
   aria-labelledby='sendOrderModalLabel'
   aria-hidden='true'
 )
-  .modal-dialog.modal-md( role='document' )
-    .modal-content
-      .modal-header
-        h5.modal-title Запись на прием к доктору Морозовой
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true')
-            img(src="img/close.svg" alt="Close")
-
-      include form
-
-      .form-result
-        p Спасибо за Вашу заявку!
-        hr
-        p Мы перезвоним Вам в ближайшее время!
+  include modal
