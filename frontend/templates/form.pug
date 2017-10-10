@@ -3,14 +3,18 @@ form(
   method='POST'
   name='first-screen-form')
 
-  input(
-    type='text'
-    name='name'
-  )
+  div.form-group
+    input.form-control(
+      type='text'
+      name='name'
+      placeholder='Введите имя'
+    )
 
-  input(
-    type='phone'
-    name='phone'
-  )
+  div.form-group
+    input.form-control(
+      type='phone'
+      name='phone'
+      placeholder='Введите телефон'
+    )
 
-  button.btn.btn-blue.inverse Отправить заявку!
+  button.btn.btn-blue Отправить заявку!

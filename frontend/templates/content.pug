@@ -44,8 +44,8 @@ section.minus
       .col-xl-1
       .col-xl-10
         p.desc.text-center Казалось бы, Invisalign – совершенный вид лечения, но он имеет один недостаток. <br>
-          b Лечение Invisalign требует внимания и ответственности со стороны пациента:
-          | каппы нужно носить 20-22 часа в  сутки и вовремя переходить к ношению следующей каппы. <br> По этой причине данный метод редко применяют для лечения юных пациентов.
+          b Лечение Invisalign требует внимания и ответственности со стороны пациента: <br>
+          |  каппы нужно носить 20-22 часа в  сутки и вовремя переходить к ношению следующей каппы. <br> По этой причине данный метод редко применяют для лечения юных пациентов.
 
 section.doctors
   .container
@@ -60,30 +60,41 @@ section.doctors
           b  ответствен за результат врач-ортодонт
           | . На этапе диагностики врач прогнозирует детально движение каждого зуба, закладывает в лечение дополнительные элементы – аттачменты, расчитывает точный срок лечения.
 
-    .row
-      .col-xl-1
-      .col-xl-3
-        img(src="img/cassagne.jpg" alt="Мишель Кассань")
-      .col-xl-7
-        h3 Мишель Кассань
-        p.blue Один из первых европейских ортодонтов, которые стали применять Invisalign. Он имеет огромный опыт в работе с этой системой элайнеров и высоко оценивает ее эффективность и практичность.
-        p Стаж в стоматологии более 30 лет. Имеет клинику в г. Париж, специализирующуюся на эстетической ортодонтии.
-        p
-          i Получил статус «Платинового» специалиста в области работы с системой невидимых капп «INVISALIGN» в 2001 году. Имеет диплом об окончании Медицинского Университета города Бордо.
-        a.call-back(href="#") Запись на прием
+    .first-doctor
+      .row
+        // .col-xl-1
+        .col-xl-4
+          img(src="img/cassagne.jpg" alt="Мишель Кассань")
+        .col-xl-8
+          h3 Мишель Кассань
+          p.blue
+            b Один из первых европейских ортодонтов, которые стали применять Invisalign.
+            |  Он имеет огромный опыт в работе с этой системой элайнеров и высоко оценивает ее эффективность и практичность.
+          p Стаж в стоматологии более 30 лет. Имеет клинику в г. Париж, специализирующуюся на эстетической ортодонтии.
+          p
+            i Получил статус «Платинового» специалиста в области работы с системой невидимых капп «INVISALIGN» в 2001 году. Имеет диплом об окончании Медицинского Университета города Бордо.
+          button.call-back.btn.btn-blue(
+            data-toggle="modal"
+            data-target="#sendOrderCassagne"
+          ) Запись на прием
 
-    .row
-      .col-xl-1
-      .col-xl-7
-        h3 Наталья Морозова
-        p.blue Прошла обучение у лучших европейских специалистов:
-          |  J.Lacout, D.Derose, Agora Marseille, L.Gautier,  Dr. Vittorio Cacciafesta, Nazan Kucukkeles, Emeritus Charles Burstone.
-        p Стаж в стоматологии с 2007 г. Владеет французским, английским и итальянским языками.
-        p
-          i Закончила с отличием стоматологический факультет ГОУ ВПО ММА им. И. М. Сеченова. По окончании получила золотую медаль и грант на выполнение научного исследования в области практической стоматологии.
-        a.call-back(href="#") Запись на прием
-      .col-xl-3
-        img(src="img/morozova.jpg" alt="Наталья Морозова")
+    .doctor
+      .row
+        //.col-xl-1
+        .col-xl-8
+          h3 Наталья Морозова
+          p.blue
+            b Прошла обучение у лучших европейских специалистов:
+            |  J.Lacout, D.Derose, Agora Marseille, L.Gautier,  Dr. Vittorio Cacciafesta, Nazan Kucukkeles, Emeritus Charles Burstone.
+          p Стаж в стоматологии с 2007 г. Владеет французским, английским и итальянским языками.
+          p
+            i Закончила с отличием стоматологический факультет ГОУ ВПО ММА им. И. М. Сеченова. По окончании получила золотую медаль и грант на выполнение научного исследования в области практической стоматологии.
+          button.call-back.btn.btn-blue(
+            data-toggle="modal"
+            data-target="#sendOrderMorozova"
+          ) Запись на прием
+        .col-xl-4
+          img(src="img/morozova.jpg" alt="Наталья Морозова")
 
 section.price
   h2.text-center Цены на Invisalign
@@ -93,9 +104,9 @@ section.price
         p.text-center К сожалению, невозможно назвать точную стоимость лечения до проведения ортодонтической  диагностики. Как и для других видов ортодонтического лечения, стоимость Invisalign зависит от сложности случая и длительности коррекции.
         p.text-center В нашей клинике представлены контракты на лечение сроком от полугода. Каждый контракт уже включает сами элайнеры, все визиты к доктору. дополнительные ортодонтические аппараты (если потребуется), ревизии капп.
         p.text-center
-          b Вы знаете точно в какую сумму Вам обойдется лечение! Никаких переплат и дополнительных платежей!
+          b Вы знаете точно в какую сумму Вам обойдется лечение!<br> Никаких переплат и дополнительных платежей!
 
-        div.form-wrap
+        div.form-wrap.form-inverse.text-center
           include form
 
 section.advantages-second
@@ -129,15 +140,18 @@ section.before-after
                   img(src=photo[x][1] alt="Фото после лечения")
                 h5.text-center После 18 месяцев лечения
 
-section#order
+section.order
   .container
     .row
-      h2.text-center.white Хотите идеальную улыбку без брекетов уже через полтора года*? <br> Записывайтесь на консультацию!
+      .col-xl-1
+      .col.col-xl-10
+        h2.text-center Хотите идеальную улыбку без брекетов уже через полтора года*? <br> Записывайтесь на консультацию!
 
-      include form
+        .form-wrap.form-inverse.text-center
+          include form
 
-      p.white
-        small *Полтора года – средний срок ортодонтичекого лечения Invisalign в ООО «Французский медицинский центр». Точный срок лечения возможно назвать только после диагностики!
+        p.desc
+          small *Полтора года – средний срок ортодонтичекого лечения Invisalign в ООО «Французский медицинский центр». Точный срок лечения возможно назвать только после диагностики!
 
 footer
   .container
@@ -145,11 +159,54 @@ footer
       .col-12.col-md-4
         img(src="img/logo_footer.svg" alt="French Dental Clinic")
         br
-        a(href="http://fdc-vip.ru/" title="Французский Медицинский Центр") Перейти на сайт клиники
+        a.site(href="http://fdc-vip.ru/" title="Французский Медицинский Центр" target="_blank")
+          i Перейти на сайт клиники
       .col
       .col-12.col-md-5
         .text-right
-          p.phone
+          p
             a.phone(href="tel:+74957072323" rel="nofollow" title="Позвонить в клинику") +7 (495) 707-23-23
           p ООО «Французский медицинский центр»
           address г. Москва, ул. 2-я Звенигородская, д. 13, стр. 41
+
+.modal.fade#sendOrderCassagne(
+  tabindex='-1'
+  role='dialog'
+  aria-labelledby='sendOrderModalLabel'
+  aria-hidden='true'
+)
+  .modal-dialog.modal-md( role='document' )
+    .modal-content
+      .modal-header
+        h5.modal-title Запись на прием к доктору Кассань
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true')
+            img(src="img/close.svg" alt="Close")
+
+      include form
+
+      .form-result
+        p Спасибо за Вашу заявку!
+        hr
+        p Мы перезвоним Вам в ближайшее время!
+
+.modal.fade#sendOrderMorozova(
+  tabindex='-1'
+  role='dialog'
+  aria-labelledby='sendOrderModalLabel'
+  aria-hidden='true'
+)
+  .modal-dialog.modal-md( role='document' )
+    .modal-content
+      .modal-header
+        h5.modal-title Запись на прием к доктору Морозовой
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true')
+            img(src="img/close.svg" alt="Close")
+
+      include form
+
+      .form-result
+        p Спасибо за Вашу заявку!
+        hr
+        p Мы перезвоним Вам в ближайшее время!

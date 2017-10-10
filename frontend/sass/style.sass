@@ -26,7 +26,11 @@ h4
   font-size: 20px
   margin-bottom: 20px
 
+a
+  color: $blue
+
 p
+  font-size: 18px
   line-height: 1.7
 
 p, address
@@ -35,10 +39,45 @@ p, address
 img
   max-width: 100%
 
+button.btn
+  cursor: pointer
+  font-family: $font-title
+  line-height: 1
+
+.btn-blue
+  background: transparent
+  color: $blue
+  border: 1px solid $blue
+  padding: 12px 40px
+  margin-top: -4px
+  &:focus
+    box-shadow: none
+  &:hover
+    background: $blue
+    color: white
+
+.form-inverse .btn-blue
+  color: white
+  border-color: white
+  &:hover
+    background: white
+    color: $blue
+
+.form-control, .form-group
+  display: inline-block
+
+.form-control
+  padding: 11px
+
+.border-blue
+  border: 1px solid $blue
+  border-radius: 5px
+  padding: 15px
+
 header
   background: $blue
   padding: 12px 0
-  box-shadow: 0 3px 13px 0 rgba(0,0,0,.2);
+  box-shadow: 0 3px 13px 0 rgba(0,0,0,.2)
 
   address
     color: white
@@ -84,6 +123,16 @@ section.first-screen
   .desc
     font-size: 24px
 
+  .form-group
+    margin-right: 12px
+    margin-bottom: 26px
+
+  input
+    min-width: 232px
+
+  button
+    display: block
+
 section.advantages
   background: $blue
   color: white
@@ -116,10 +165,78 @@ section.doctors
     color: $blue
     letter-spacing: 1px
 
+  .first-doctor, .doctor
+    font-size: 18px
+
+  .first-doctor
+    margin-bottom: 70px
+
+  button
+    margin-top: 18px
+
 section.price
   background: $blue
   color: white
 
+  p
+    font-size: 18px
+    margin-bottom: 28px
+
+  .form-wrap
+    text-align: center
+
+section.advantages-second
+  padding-bottom: 35px
+  h4
+    font-size: 22px
+    line-height: 1.7
+    color: $blue
+
+  p.list-desc
+    color: $blue
+    font-size: 14px
+
+section.before-after
+  padding-top: 35px
+
+  h1
+    color: $blue
+    margin-bottom: 20px
+
+  h5
+    font-family: $font-base
+    font-weight: 400
+    font-size: 14px
+    color: $blue
+
+  img
+    margin-bottom: 20px
+
+section.order
+  background: $blue
+  color: white
+
+  h2
+    line-height: 1.7
+
+  .desc
+    font-size: 16px
+    margin-top: 16px
+
 footer
   background: $light-blue
   padding: 55px 0
+  color: $blue
+
+  .site
+    font-size: 18px
+    text-decoration: underline
+    margin-top: 24px
+    display: block
+
+  .phone
+    font-family: $font-title
+    font-size: 28px
+
+button.close
+  cursor: pointer

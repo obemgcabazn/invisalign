@@ -35,9 +35,13 @@
             <h2>Незаметное лечение,<br>заметный результат</h2>
             <p class="desc">Узнайте стоимость годового контракта «под ключ»!</p>
             <form action="mail.php" method="POST" name="first-screen-form">
-              <input type="text" name="name">
-              <input type="phone" name="phone">
-              <button class="btn btn-blue inverse">Отправить заявку!</button>
+              <div class="form-group">
+                <input class="form-control" type="text" name="name" placeholder="Введите имя">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="phone" name="phone" placeholder="Введите телефон">
+              </div>
+              <button class="btn btn-blue">Отправить заявку!</button>
             </form>
           </div>
         </div>
@@ -76,7 +80,7 @@
         <div class="row">
           <div class="col-xl-1"></div>
           <div class="col-xl-10">
-            <p class="desc text-center">Казалось бы, Invisalign – совершенный вид лечения, но он имеет один недостаток. <br><b>Лечение Invisalign требует внимания и ответственности со стороны пациента:</b>каппы нужно носить 20-22 часа в  сутки и вовремя переходить к ношению следующей каппы. <br> По этой причине данный метод редко применяют для лечения юных пациентов.</p>
+            <p class="desc text-center">Казалось бы, Invisalign – совершенный вид лечения, но он имеет один недостаток. <br><b>Лечение Invisalign требует внимания и ответственности со стороны пациента: <br></b> каппы нужно носить 20-22 часа в  сутки и вовремя переходить к ношению следующей каппы. <br> По этой причине данный метод редко применяют для лечения юных пациентов.</p>
           </div>
         </div>
       </div>
@@ -94,26 +98,31 @@
             <p class="desc text-center">Несмотря на то, что абсолютно все каппы Invisalign производят в США,<b> ответствен за результат врач-ортодонт</b>. На этапе диагностики врач прогнозирует детально движение каждого зуба, закладывает в лечение дополнительные элементы – аттачменты, расчитывает точный срок лечения.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-1"></div>
-          <div class="col-xl-3"><img src="img/cassagne.jpg" alt="Мишель Кассань"></div>
-          <div class="col-xl-7">
-            <h3>Мишель Кассань</h3>
-            <p class="blue">Один из первых европейских ортодонтов, которые стали применять Invisalign. Он имеет огромный опыт в работе с этой системой элайнеров и высоко оценивает ее эффективность и практичность.</p>
-            <p>Стаж в стоматологии более 30 лет. Имеет клинику в г. Париж, специализирующуюся на эстетической ортодонтии.</p>
-            <p><i>Получил статус «Платинового» специалиста в области работы с системой невидимых капп «INVISALIGN» в 2001 году. Имеет диплом об окончании Медицинского Университета города Бордо.</i></p><a class="call-back" href="#">Запись на прием</a>
+        <div class="first-doctor">
+          <div class="row">
+            <!-- .col-xl-1-->
+            <div class="col-xl-4"><img src="img/cassagne.jpg" alt="Мишель Кассань"></div>
+            <div class="col-xl-8">
+              <h3>Мишель Кассань</h3>
+              <p class="blue"><b>Один из первых европейских ортодонтов, которые стали применять Invisalign.</b> Он имеет огромный опыт в работе с этой системой элайнеров и высоко оценивает ее эффективность и практичность.</p>
+              <p>Стаж в стоматологии более 30 лет. Имеет клинику в г. Париж, специализирующуюся на эстетической ортодонтии.</p>
+              <p><i>Получил статус «Платинового» специалиста в области работы с системой невидимых капп «INVISALIGN» в 2001 году. Имеет диплом об окончании Медицинского Университета города Бордо.</i></p>
+              <button class="call-back btn btn-blue" data-toggle="modal" data-target="#sendOrderCassagne">Запись на прием</button>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-1"></div>
-          <div class="col-xl-7">
-            <h3>Наталья Морозова</h3>
-            <p class="blue">
-              Прошла обучение у лучших европейских специалистов: J.Lacout, D.Derose, Agora Marseille, L.Gautier,  Dr. Vittorio Cacciafesta, Nazan Kucukkeles, Emeritus Charles Burstone.</p>
-            <p>Стаж в стоматологии с 2007 г. Владеет французским, английским и итальянским языками.</p>
-            <p><i>Закончила с отличием стоматологический факультет ГОУ ВПО ММА им. И. М. Сеченова. По окончании получила золотую медаль и грант на выполнение научного исследования в области практической стоматологии.</i></p><a class="call-back" href="#">Запись на прием</a>
+        <div class="doctor">
+          <div class="row">
+            <!--.col-xl-1-->
+            <div class="col-xl-8">
+              <h3>Наталья Морозова</h3>
+              <p class="blue"><b>Прошла обучение у лучших европейских специалистов:</b> J.Lacout, D.Derose, Agora Marseille, L.Gautier,  Dr. Vittorio Cacciafesta, Nazan Kucukkeles, Emeritus Charles Burstone.</p>
+              <p>Стаж в стоматологии с 2007 г. Владеет французским, английским и итальянским языками.</p>
+              <p><i>Закончила с отличием стоматологический факультет ГОУ ВПО ММА им. И. М. Сеченова. По окончании получила золотую медаль и грант на выполнение научного исследования в области практической стоматологии.</i></p>
+              <button class="call-back btn btn-blue" data-toggle="modal" data-target="#sendOrderMorozova">Запись на прием</button>
+            </div>
+            <div class="col-xl-4"><img src="img/morozova.jpg" alt="Наталья Морозова"></div>
           </div>
-          <div class="col-xl-3"><img src="img/morozova.jpg" alt="Наталья Морозова"></div>
         </div>
       </div>
     </section>
@@ -124,12 +133,16 @@
           <div class="col-12">
             <p class="text-center">К сожалению, невозможно назвать точную стоимость лечения до проведения ортодонтической  диагностики. Как и для других видов ортодонтического лечения, стоимость Invisalign зависит от сложности случая и длительности коррекции.</p>
             <p class="text-center">В нашей клинике представлены контракты на лечение сроком от полугода. Каждый контракт уже включает сами элайнеры, все визиты к доктору. дополнительные ортодонтические аппараты (если потребуется), ревизии капп.</p>
-            <p class="text-center"><b>Вы знаете точно в какую сумму Вам обойдется лечение! Никаких переплат и дополнительных платежей!</b></p>
-            <div class="form-wrap">
+            <p class="text-center"><b>Вы знаете точно в какую сумму Вам обойдется лечение!<br> Никаких переплат и дополнительных платежей!</b></p>
+            <div class="form-wrap form-inverse text-center">
               <form action="mail.php" method="POST" name="first-screen-form">
-                <input type="text" name="name">
-                <input type="phone" name="phone">
-                <button class="btn btn-blue inverse">Отправить заявку!</button>
+                <div class="form-group">
+                  <input class="form-control" type="text" name="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="phone" name="phone" placeholder="Введите телефон">
+                </div>
+                <button class="btn btn-blue">Отправить заявку!</button>
               </form>
             </div>
           </div>
@@ -199,27 +212,36 @@
         </div>
       </div>
     </section>
-    <section id="order">
+    <section class="order">
       <div class="container">
         <div class="row">
-          <h2 class="text-center white">Хотите идеальную улыбку без брекетов уже через полтора года*? <br> Записывайтесь на консультацию!</h2>
-          <form action="mail.php" method="POST" name="first-screen-form">
-            <input type="text" name="name">
-            <input type="phone" name="phone">
-            <button class="btn btn-blue inverse">Отправить заявку!</button>
-          </form>
-          <p class="white"><small>*Полтора года – средний срок ортодонтичекого лечения Invisalign в ООО «Французский медицинский центр». Точный срок лечения возможно назвать только после диагностики!</small></p>
+          <div class="col-xl-1"></div>
+          <div class="col col-xl-10">
+            <h2 class="text-center">Хотите идеальную улыбку без брекетов уже через полтора года*? <br> Записывайтесь на консультацию!</h2>
+            <div class="form-wrap form-inverse text-center">
+              <form action="mail.php" method="POST" name="first-screen-form">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="phone" name="phone" placeholder="Введите телефон">
+                </div>
+                <button class="btn btn-blue">Отправить заявку!</button>
+              </form>
+            </div>
+            <p class="desc"><small>*Полтора года – средний срок ортодонтичекого лечения Invisalign в ООО «Французский медицинский центр». Точный срок лечения возможно назвать только после диагностики!</small></p>
+          </div>
         </div>
       </div>
     </section>
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4"><img src="img/logo_footer.svg" alt="French Dental Clinic"><br><a href="http://fdc-vip.ru/" title="Французский Медицинский Центр">Перейти на сайт клиники</a></div>
+          <div class="col-12 col-md-4"><img src="img/logo_footer.svg" alt="French Dental Clinic"><br><a class="site" href="http://fdc-vip.ru/" title="Французский Медицинский Центр" target="_blank"><i>Перейти на сайт клиники</i></a></div>
           <div class="col"></div>
           <div class="col-12 col-md-5">
             <div class="text-right">
-              <p class="phone"><a class="phone" href="tel:+74957072323" rel="nofollow" title="Позвонить в клинику">+7 (495) 707-23-23</a></p>
+              <p><a class="phone" href="tel:+74957072323" rel="nofollow" title="Позвонить в клинику">+7 (495) 707-23-23</a></p>
               <p>ООО «Французский медицинский центр»</p>
               <address>г. Москва, ул. 2-я Звенигородская, д. 13, стр. 41</address>
             </div>
@@ -227,6 +249,54 @@
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="sendOrderCassagne" tabindex="-1" role="dialog" aria-labelledby="sendOrderModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Запись на прием к доктору Кассань</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close.svg" alt="Close"></span></button>
+          </div>
+          <form action="mail.php" method="POST" name="first-screen-form">
+            <div class="form-group">
+              <input class="form-control" type="text" name="name" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="phone" name="phone" placeholder="Введите телефон">
+            </div>
+            <button class="btn btn-blue">Отправить заявку!</button>
+          </form>
+          <div class="form-result">
+            <p>Спасибо за Вашу заявку!</p>
+            <hr>
+            <p>Мы перезвоним Вам в ближайшее время!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="sendOrderMorozova" tabindex="-1" role="dialog" aria-labelledby="sendOrderModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Запись на прием к доктору Морозовой</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close.svg" alt="Close"></span></button>
+          </div>
+          <form action="mail.php" method="POST" name="first-screen-form">
+            <div class="form-group">
+              <input class="form-control" type="text" name="name" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="phone" name="phone" placeholder="Введите телефон">
+            </div>
+            <button class="btn btn-blue">Отправить заявку!</button>
+          </form>
+          <div class="form-result">
+            <p>Спасибо за Вашу заявку!</p>
+            <hr>
+            <p>Мы перезвоним Вам в ближайшее время!</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
