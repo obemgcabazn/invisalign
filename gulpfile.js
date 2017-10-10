@@ -40,7 +40,7 @@ gulp.task('js', function (cb) {
 });
 
 gulp.task('pug', function (){
-    return gulp.src( 'frontend/templates/indexfile.pug' )
+    return gulp.src( 'frontend/templates/index.pug' )
         .pipe( pug( {pretty: true} ) )
         .pipe( gulp.dest( 'public/' ) )
 });

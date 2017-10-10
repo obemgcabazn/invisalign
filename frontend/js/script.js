@@ -15,7 +15,7 @@
       if(doctor !== undefined || doctor !== ""){
         m_data += '&doctor=' + doctor;
       }
-      
+
       $.ajax({
         type: m_method,
         url: m_action,
