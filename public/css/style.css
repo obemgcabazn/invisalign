@@ -1241,7 +1241,7 @@ a.bg-dark:focus,a.bg-dark:hover{background-color:#1d2124!important}
 .text-xl-right{text-align:right!important}
 .text-xl-center{text-align:center!important}
 }
-section.order .form-wrap,section.price .form-wrap{text-align:center}
+section.order .form-wrap,section.price .form-wrap,section.send-order .before{text-align:center}
 .text-lowercase{text-transform:lowercase!important}
 .text-uppercase{text-transform:uppercase!important}
 .text-capitalize{text-transform:capitalize!important}
@@ -1277,7 +1277,7 @@ h3{font-size:28px;margin-bottom:28px}
 h4{font-size:20px;margin-bottom:20px}
 p{font-size:18px;line-height:1.7}
 address,p{font-family:"Open Sans",Helvetica,Arial,sans-serif}
-button.btn,header .phone{font-family:Prata,"Times New Roman",serif}
+button.btn,header .phone,section.send-order .before{font-family:Prata,"Times New Roman",serif}
 img{max-width:100%}
 button.btn{cursor:pointer;line-height:1}
 .btn-blue{background:0 0;border:1px solid #146aa4;padding:12px 40px;margin-top:-4px}
@@ -1286,25 +1286,29 @@ button.btn{cursor:pointer;line-height:1}
 .form-inverse .btn-blue{color:#fff;border-color:#fff}
 .form-inverse .btn-blue:hover{background:#fff;color:#146aa4}
 .form-control,.form-group{display:inline-block}
-.modal .form-control,.modal .form-group,footer .site,section.first-screen button{display:block}
+.modal .form-control,.modal .form-group,footer .site,section.first-screen button,section.send-order .before{display:block}
 .form-control{padding:11px}
 .border-blue{border:1px solid #146aa4;border-radius:5px;padding:15px}
-header{background:#146aa4;padding:12px 0;box-shadow:0 3px 13px 0 rgba(0,0,0,.2)}
+header{background:#146aa4;padding:12px 0;box-shadow:0 3px 13px 0 rgba(0,0,0,.2);position:relative;z-index:10}
 header address{color:#fff;font-style:italic;font-weight:300;font-size:18px;line-height:24px;padding:0;margin:0}
 header .phone{color:#fff;font-size:26px}
 section{padding:70px 0}
-section.advantages-second,section.minus{padding-bottom:35px}
-section.before-after,section.doctors{padding-top:35px}
-section.first-screen{background:url(../img/invisalign.jpg) no-repeat;background-size:contain}
-section.advantages,section.order,section.price{background:url(../img/pattern.svg) #146aa4}
+section.first-screen{background:url(../img/invisalign.jpg) no-repeat;background-size:contain;padding:70px 0 50px}
 section.first-screen .first-screen-logo{margin-bottom:35px}
-section.first-screen h1{text-transform:uppercase;color:#146aa4;font-size:56px;margin-bottom:30px}
+section.first-screen h1{text-transform:uppercase;color:#146aa4;font-size:40px;margin-bottom:10px;line-height:1.9;letter-spacing:1px}
 section.first-screen h2{color:#146aa4;font-size:30px;letter-spacing:1px;line-height:1.45;margin-bottom:40px}
 section.first-screen .desc{font-size:24px}
 section.first-screen .form-group{margin-right:12px;margin-bottom:26px}
-section.order .form-wrap .form-group,section.price .form-wrap .form-group{margin-right:25px;width:250px}
 section.first-screen input{min-width:232px}
 section.first-screen .form-result{height:108px}
+section.send-order{background:#E9F6FF;color:#146aa4;padding-bottom:35px}
+section.send-order .before{position:absolute;z-index:1000;right:140px;margin-top:-100px;background:#F29200;width:150px;height:150px;border-radius:50%;padding:25px;color:#fff;font-size:24px}
+section.advantages,section.order,section.price{background:url(../img/pattern.svg) #146aa4}
+section.order .form-wrap .form-group,section.price .form-wrap .form-group{margin-right:25px;width:250px}
+section.advantages-second,section.minus{padding-bottom:35px}
+section.before-after,section.doctors{padding-top:35px}
+section.send-order h2{margin-bottom:10px}
+section.send-order p.desc{font-size:24px;margin-bottom:30px}
 section.advantages{color:#fff}
 section.advantages h3{font-size:20px;margin-bottom:20px}
 section.advantages .desc{font-size:14px}

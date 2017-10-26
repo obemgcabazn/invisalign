@@ -4,8 +4,9 @@ $phone = htmlspecialchars($_POST['phone']);
 
 if ( $phone ) {
 
-  $to = 'office@spaceweb.studio';
-  $from='invisalign@fdc-vip.ru';
+  $to = 'recept@fdc-vip.ru';
+  // $from='invisalign@fdc-vip.ru';
+  $subject = 'Заявка invisalign от ' . $username;
 
   $message = 'Клиент ' . $username . ', номер телефона: ' . $phone . ".";
 
@@ -23,6 +24,7 @@ if ( $phone ) {
 
   }
 
-  mail($to, $username, $message, 'From:'.$from);
 
+
+  mail($to, $subject, $message, "From: invisalign@fdc-vip.ru\r\n" . 'Content-type: text/html; charset="utf-8"');
 }
