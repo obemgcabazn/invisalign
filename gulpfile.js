@@ -1,15 +1,15 @@
 var gulp          = require('gulp'),
-  sourcemaps    = require('gulp-sourcemaps'),
-  autoprefixer  = require('gulp-autoprefixer'),
-  concat        = require('gulp-concat'),
-  sass          = require('gulp-sass'),
-  uglify        = require('gulp-uglify'),
-  pump          = require('pump'),
-  order         = require('gulp-order'),
-  cleanCSS      = require('gulp-clean-css'),
-  livereload    = require('gulp-livereload'),
-  pug           = require('gulp-pug'),
-  imagemin      = require('gulp-imagemin');
+    sourcemaps    = require('gulp-sourcemaps'),
+    autoprefixer  = require('gulp-autoprefixer'),
+    concat        = require('gulp-concat'),
+    sass          = require('gulp-sass'),
+    uglify        = require('gulp-uglify'),
+    pump          = require('pump'),
+    order         = require('gulp-order'),
+    cleanCSS      = require('gulp-clean-css'),
+    livereload    = require('gulp-livereload'),
+    pug           = require('gulp-pug'),
+    imagemin      = require('gulp-imagemin');
 
 
 gulp.task('watch', function(){

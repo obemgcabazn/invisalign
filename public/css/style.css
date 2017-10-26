@@ -1271,6 +1271,10 @@ a.text-dark:focus,a.text-dark:hover{color:#1d2124!important}
 .blue,.btn-blue,a{color:#146aa4}
 .visible{visibility:visible!important}
 .invisible{visibility:hidden!important}
+@media (max-width:768px){.call-back-form .form-group,.call-back-form button,.call-back-form input{display:block;width:100%}
+.call-back-form .form-group{width:100%!important;margin-right:0!important}
+}
+.bg-white{background:#fff}
 h1,h2,h3,h4,h5,h6{font-family:Prata,"Times New Roman",serif}
 h2{font-size:40px;margin-bottom:40px;letter-spacing:1px}
 h3{font-size:28px;margin-bottom:28px}
@@ -1286,13 +1290,18 @@ button.btn{cursor:pointer;line-height:1}
 .form-inverse .btn-blue{color:#fff;border-color:#fff}
 .form-inverse .btn-blue:hover{background:#fff;color:#146aa4}
 .form-control,.form-group{display:inline-block}
-.modal .form-control,.modal .form-group,footer .site,section.first-screen button,section.send-order .before{display:block}
+.modal .form-control,.modal .form-group{display:block}
 .form-control{padding:11px}
 .border-blue{border:1px solid #146aa4;border-radius:5px;padding:15px}
 header{background:#146aa4;padding:12px 0;box-shadow:0 3px 13px 0 rgba(0,0,0,.2);position:relative;z-index:10}
+@media (max-width:575px){header .logo{margin-bottom:10px;display:none}
+}
 header address{color:#fff;font-style:italic;font-weight:300;font-size:18px;line-height:24px;padding:0;margin:0}
 header .phone{color:#fff;font-size:26px}
 section{padding:70px 0}
+@media (max-width:575px){header address{margin-bottom:10px}
+section{padding:35px 0}
+}
 section.first-screen{background:url(../img/invisalign.jpg) no-repeat;background-size:contain;padding:70px 0 50px}
 section.first-screen .first-screen-logo{margin-bottom:35px}
 section.first-screen h1{text-transform:uppercase;color:#146aa4;font-size:40px;margin-bottom:10px;line-height:1.9;letter-spacing:1px}
@@ -1300,44 +1309,87 @@ section.first-screen h2{color:#146aa4;font-size:30px;letter-spacing:1px;line-hei
 section.first-screen .desc{font-size:24px}
 section.first-screen .form-group{margin-right:12px;margin-bottom:26px}
 section.first-screen input{min-width:232px}
+section.first-screen button{display:block}
 section.first-screen .form-result{height:108px}
+@media (max-width:575px){section.first-screen{background:0 0;padding:35px 0}
+section.first-screen h1{text-transform:none;line-height:1.3;margin-bottom:10px}
+input{width:100%}
+}
+@media (min-width:576px) and (max-width:768px){section.first-screen{background:0 0;padding:35px 0}
+section.first-screen h1{line-height:1.4;margin-bottom:25px}
+}
 section.send-order{background:#E9F6FF;color:#146aa4;padding-bottom:35px}
-section.send-order .before{position:absolute;z-index:1000;right:140px;margin-top:-100px;background:#F29200;width:150px;height:150px;border-radius:50%;padding:25px;color:#fff;font-size:24px}
+section.send-order .before{display:block;position:absolute;z-index:1000;right:140px;margin-top:-100px;background:#F29200;width:150px;height:150px;border-radius:50%;padding:25px;color:#fff;font-size:24px}
 section.advantages,section.order,section.price{background:url(../img/pattern.svg) #146aa4}
-section.order .form-wrap .form-group,section.price .form-wrap .form-group{margin-right:25px;width:250px}
-section.advantages-second,section.minus{padding-bottom:35px}
-section.before-after,section.doctors{padding-top:35px}
 section.send-order h2{margin-bottom:10px}
 section.send-order p.desc{font-size:24px;margin-bottom:30px}
+@media (max-width:768px){section.send-order .before{width:100%;position:static;border-radius:0;margin-top:-75px;height:auto;margin-bottom:20px}
+section.send-order p.desc{font-size:18px}
+}
 section.advantages{color:#fff}
 section.advantages h3{font-size:20px;margin-bottom:20px}
 section.advantages .desc{font-size:14px}
+@media (max-width:575px){section.advantages h2{font-size:24px;line-height:1.4}
+section.advantages h3{font-size:20px;margin-bottom:10px}
+}
+section.minus{padding-bottom:35px}
 section.minus h2{color:#146aa4}
 section.minus .desc{font-size:18px;line-height:1.7}
+@media (max-width:575px){section.minus .desc{font-size:14px}
+section.minus b{display:block;margin:15px 0}
+section.minus{padding-bottom:0}
+section.minus h2{font-size:28px;margin-bottom:25px}
+}
+section.doctors{padding-top:35px}
 section.doctors .desc{margin-bottom:40px}
 section.doctors h3{color:#146aa4;letter-spacing:1px}
 section.doctors .doctor,section.doctors .first-doctor{font-size:18px}
 section.doctors .first-doctor{margin-bottom:70px;margin-top:50px}
 section.doctors button{margin-top:18px}
+@media (max-width:575px){section.doctors{padding-top:20px}
+section.doctors h2{font-size:28px;margin-bottom:25px;line-height:1.3}
+section.doctors .desc{font-size:14px;margin-bottom:0}
+section.doctors h3{margin-top:10px;margin-bottom:15px}
+section.doctors .doctor p,section.doctors .first-doctor p{font-size:14px}
+section.doctors .first-doctor{margin-bottom:10px}
+section.doctors hr{margin:35px 0}
+}
+section.order .form-wrap .form-group,section.price .form-wrap .form-group{margin-right:25px;width:250px}
 section.price{color:#fff}
 section.price p{font-size:18px;margin-bottom:28px}
+@media (max-width:575px){section.price h2{font-size:28px;margin-bottom:35px}
+section.price p.desc{font-size:14px}
+}
+section.advantages-second{padding-bottom:35px}
 section.advantages-second .desc{margin-bottom:60px}
 section.advantages-second h4{font-size:22px;line-height:1.7;color:#146aa4}
-section.advantages-second p.list-desc,section.before-after h5{font-size:14px;color:#146aa4}
+section.advantages-second p.list-desc{color:#146aa4;font-size:14px}
+@media (max-width:575px){section.advantages-second h2{font-size:28px;margin-bottom:30px}
+section.advantages-second .desc{font-size:14px;margin-bottom:35px}
+}
+section.before-after{padding-top:35px}
 section.before-after h1{color:#146aa4;margin-bottom:20px}
-section.before-after h5{font-family:"Open Sans",Helvetica,Arial,sans-serif;font-weight:400}
+section.before-after h5{font-family:"Open Sans",Helvetica,Arial,sans-serif;font-weight:400;font-size:14px;color:#146aa4}
 section.before-after img{margin-bottom:20px}
 section.order{color:#fff}
 section.order h2{line-height:1.7}
 section.order .desc{font-size:16px;margin-top:16px}
+@media (max-width:575px){section.order h2{font-size:28px;line-height:1.5}
+}
 footer{background:#ecf3f7;padding:55px 0;color:#146aa4}
-footer .site{font-size:18px;text-decoration:underline;margin-top:24px}
+footer .site{font-size:18px;text-decoration:underline;margin-top:24px;display:block}
 footer .phone{font-family:Prata,"Times New Roman",serif;font-size:28px}
+@media (max-width:575px){footer{padding:35px 0}
+footer address{font-size:14px}
+}
 .modal .modal-content{padding:0 50px 50px}
 .modal .modal-content .modal-header{border:none}
 .modal .modal-content .modal-header button.close{position:absolute;right:15px;top:15px}
 .modal .modal-content .modal-title{font-size:28px;color:#146aa4;margin:10px 0 30px}
 .modal .modal-content input{font-style:italic;max-width:300px;margin:auto}
 .modal .modal-content button.btn{text-align:center;display:block;margin:30px auto auto}
+@media (max-width:575px){.modal .modal-content{padding:0 30px 30px}
+.modal .modal-content .modal-title{font-size:20px}
+}
 .form-result{display:none}
 /*# sourceMappingURL=style.css.map */
